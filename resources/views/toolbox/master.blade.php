@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>@yield('title', 'Developer Toolbox')</title>
-    <link rel='stylesheet' href='css/toolbox/normalize.css'/>
-    <link rel='stylesheet' href='css/toolbox/default.css'/>
+    <link rel='stylesheet' href='{{ asset('css/toolbox/normalize.css') }}'/>
+    <link rel='stylesheet' href='{{ asset('css/toolbox/default.css') }}'/>
+    <script src="{{ asset('js/jquery-2.1.1.js') }}" type="text/javascript"></script>
     @yield('links')
 </head>
 <body>

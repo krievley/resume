@@ -194,8 +194,6 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form'=> 'Illuminate\Html\FormFacade', 
 	'HTML'=> 'Illuminate\Html\HtmlFacade',
-        'Faker'=> 'Faker\Factory',
-        'LoremIpsum'	  => 'Badcow\LoremIpsum\Generator',
 
     ],
 

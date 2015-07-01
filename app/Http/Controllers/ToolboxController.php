@@ -1,6 +1,8 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Badcow\LoremIpsum\Generator;
+use Validator, Input, Redirect, Faker, LoremIpsum; 
 
 class ToolboxController extends Controller {
     
@@ -36,17 +38,19 @@ class ToolboxController extends Controller {
         if($validator->passes()) {
             $postData = Input::get('number');
             //Create new lorem ipsum object.
-            $generator = new LoremIpsum();
+            $generator = new Generator();
             //Generate array of paragraphs.
             $paragraphs = $generator->getParagraphs($postData);
             //Format paragraphs for view.
             $paragraphData = implode('<p>', $paragraphs);
             //Return data to view.
-            return View::make('loremipsum')->with('paragraphData', $paragraphData);
+            return $paragraphData;
         }
         //If input is not validated.
         // get the error messages from the validator
-        $messages = $validator->messages();
-        return Redirect::to('/toolbox/loremipsum')->withErrors($validator);
+        else {
+            $errors = $validator->messages();
+            return Redirect::to('/toolbox/loremipsum')->withErrors($errors);
+        }
     }
 }
