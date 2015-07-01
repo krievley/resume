@@ -33,3 +33,6 @@ Route::post('/contact', function () {
     //Redirect to home page.
     return Redirect::to('/');
 });
+
+//Route to controller which handles the developer toolbox website items.
+Route::controller('toolbox', 'ToolboxController');
