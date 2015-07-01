@@ -20,7 +20,7 @@
 
 @section('content')
     <div id="main">
-        <a href="/loremipsum" target="_blank"><div class="container">
+        <a href="/toolbox/loremipsum" target="_blank"><div class="container">
             <div class="col2">
                 <h2>Lorem Ipsum Generator</h2>
                 <p>

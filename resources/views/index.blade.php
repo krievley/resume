@@ -48,28 +48,28 @@
   </div>
   <div class="w-hidden-small w-hidden-tiny section grey"></div>
   <div class="w-clearfix section" id="features">
-    <a href="default.html"><div class="w-container">
+    <a href="/toolbox"><div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6">
-          <h2>Smith &amp; Jones Website</h2>
-          <p>This website uses an innovative calendar application that&nbsp;accepts appointment requests from clients and allows the admin complete control to view, add, edit, or delete appointments online.&nbsp;</p>
+          <h2>My Developer Toolbox</h2>
+          <p>I use this website to assist in application development.</p>
           <div class="w-row">
             <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-              <div class="icon-title">Schedule&nbsp;</div>
+              <div class="icon-title">Generate Text</div>
               <img src="images/cal.jpg" width="57" height="57" alt="536d6a91a306daae7522c6a1_cal.jpg">
             </div>
             <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-              <div class="icon-title">Confirm</div>
+              <div class="icon-title">Create Passwords</div>
               <img src="images/env.png" width="75" height="57" alt="536d6abbf1ee86af75ef5c0a_env.png">
             </div>
             <div class="w-col w-col-4 w-col-small-4 w-col-tiny-4">
-              <div class="icon-title">Manage</div>
+              <div class="icon-title">Add Users</div>
               <img src="images/boss.jpg" width="57" height="57" alt="536d6adea306daae7522c6a4_boss.jpg">
             </div>
           </div>
         </div>
         <div class="w-col w-col-6 center">
-          <img class="snapshot" src="images/sjSnapshot.JPG" alt="536d6d377e303028395c4ded_sjSnapshot.JPG">
+          <img class="snapshot" src="images/screenshot.JPG" width="557" alt="536d6d377e303028395c4ded_screenshot.JPG">
             <div class="img-title">Click to tour the website...</div>
         </div>
       </div>
