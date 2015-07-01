@@ -28,7 +28,6 @@ Route::post('/contact', function () {
     //Send email to administrator with contact details
     Mail::send('emails.contact', ['contact' => $contact], function($message)
     {
-        $message->from('admin@example.com', 'Rievley.com');
         $message->to('kristin@rievley.com', 'Administrator')->subject('Contact Request');
     });
     //Redirect to home page.
