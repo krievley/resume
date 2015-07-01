@@ -11,6 +11,26 @@
 |
 */
 
+//Home route
 Route::get('/', function () {
     return view('index');
+});
+
+//Resume Route
+Route::get('/resume', function () {
+    return view('resume');
+});
+
+//Email contact details.
+Route::post('/contact', function () {
+    //Get contact details submitted through form.
+    $contact = Input::all();
+    //Send email to administrator with contact details
+    Mail::send('emails.contact', ['contact' => $contact], function($message)
+    {
+        $message->from('admin@example.com', 'Rievley.com');
+        $message->to('kristin@rievley.com', 'Administrator')->subject('Contact Request');
+    });
+    //Redirect to home page.
+    return Redirect::to('/');
 });
