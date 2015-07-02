@@ -28,9 +28,9 @@
                     <label>Paragraphs:</label>
                     <input id="number" name="number" type="number" value="4">
                     <label>(Max: 99)</label>
-                    @foreach($errors->all() as $message)
-                        {{ $message }}
-                    @endforeach
+                    <!-- Div to hold error messages -->
+                    <div class="errors"></div>
+                    <br/><br/>
                     <!-- Submit Form -->
                     <button id="submit" class="LIsubmit">Submit</button>
             </div>
@@ -44,6 +44,9 @@
     $(document).ready(function() {
         //when submit button is clicked...
         $('#submit').on('click', function() {
+            //Clear any of the response divs.
+            $('#result').empty();
+            $('.errors').empty();
             //submit number and csrf token
             $.ajax({
                 method: 'POST',
@@ -52,6 +55,12 @@
                 success: function(result) {
                     //Put result in paragraph.
                     $('#result').html(result);
+                },
+                error: function (jqXHR) {
+                    //Display any errors.
+                   var response = JSON.parse(jqXHR.responseText);
+                   console.log(response.number);
+                   $('.errors').text(response.number);
                 }
             });
         });

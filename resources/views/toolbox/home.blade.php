@@ -35,7 +35,7 @@
         </div></a>
     </div>
     <div id="secondary">
-        <a href="/user" target="_blank"><div class="container">
+        <a href="/toolbox/user" target="_blank"><div class="container">
             <div class="col1">
                 <img id="cloud" src="{{ asset('images/cloud.png') }}" alt="Cloud" />
             </div>

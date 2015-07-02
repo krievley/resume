@@ -15,7 +15,7 @@
             @yield('picture')
             @yield('col')
                 @yield('h1')
-                <h4><a href="/toolbox" target="_blank">Home</a> | <a href="/loremipsum" target="_blank">Lorem Ipsum</a> | <a href="/user" target="_blank">Random User</a> | <a href="password" target="_blank">XKCD Password</a></h4>
+                <h4><a href="/toolbox" target="_blank">Home</a> | <a href="/toolbox/loremipsum" target="_blank">Lorem Ipsum</a> | <a href="/toolbox/user" target="_blank">Random User</a> | <a href="/toolbox/password" target="_blank">XKCD Password</a></h4>
             </div>
         </div>
         @yield('bar')
