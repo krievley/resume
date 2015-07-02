@@ -1,7 +1,7 @@
 # Resume Website
 
 ## Live Site
-kristin.rievley.com
+http://kristin.rievley.com
 
 ## Description
 This project houses my resume and portfolio of work.
