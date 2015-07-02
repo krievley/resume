@@ -18,8 +18,8 @@ class ToolboxController extends Controller {
     }
     
     //Lorem Ipsum Page function
-    public function getLoremipsum($paragraphData = '') {
-        return view('toolbox.loremipsum')->with('paragraphData', $paragraphData);
+    public function getLoremipsum() {
+        return view('toolbox.loremipsum');
     }
     
     //Process the lorem ipsum form.
@@ -56,8 +56,8 @@ class ToolboxController extends Controller {
     }
     
     //Function to display the random user generator page.
-    public function getUser($userData = array()) {
-        return view('toolbox.user')->with('userData', $userData);
+    public function getUser() {
+        return view('toolbox.user');
     }
     
     //Function to process the random user generator form.
@@ -105,5 +105,10 @@ class ToolboxController extends Controller {
             $errors = $validator->messages();
             return response($errors = $errors, $status = '400');
         }
+    }
+    
+    //Function to display password generator page.
+    public function getPassword() {
+        return view('toolbox.password');
     }
 }

@@ -49,7 +49,7 @@
         </div></a>
     </div>
     <div id="final">
-        <a href="password" target="_blank"><div class="container">
+        <a href="/toolbox/password" target="_blank"><div class="container">
             <div class="col2">
                 <h2>XKCD Password Generator</h2>
                 <p>
