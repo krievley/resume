@@ -57,7 +57,7 @@
                     <h5>Separate Words By:</h5>
                     <div class="input para">
                         <!-- Letter separation choices. ---------------------->
-                        <input type="radio" name="separation" value="spaces" checked="true">
+                        <input type="radio" name="separation" value="spaces" checked>
                         <label>Spaces</label>
                         <br />
                         <input type="radio" name="separation" value="camelCase">
@@ -71,13 +71,13 @@
                     <h5>Letters Should Appear:</h5>
                     <div class="input para">
                         <!-- Letter capitalization choices. ------------------>
-                        <input type="radio" name="letter" value="lower" checked="true">
+                        <input type="radio" name="letter" value="lower" id="lower" checked>
                         <label>Lower Case</label>
                         <br />
-                        <input type="radio" name="letter" value="upper">
+                        <input type="radio" name="letter" value="upper" id="upper">
                         <label>Upper Case</label>
                         <br />
-                        <input type="radio" name="letter" value="capital">
+                        <input type="radio" name="letter" value="capital" id="capital">
                         <label>Capitalize 1st Letter</label>
                     </div>
                 </div>
@@ -100,29 +100,25 @@
                 method: 'POST',
                 url: '/toolbox/password',
                 data: {
-                    number: $('#number').val(), 
                     _token: $('input[name="_token"]').val(), 
-                    birthday: $('#birthday').is(':checked'), 
-                    profile: $('#profile').is(':checked'),
+                    words: $('#words').val(), 
+                    num: $('#num').is(':checked'),
+                    symbol: $('#symbol').is(':checked'),
+                    symbols: $('#symbols').val(),
+                    separation: $('input[name="separation"]:checked').val(),
+                    letter: $('input[name="letter"]:checked').val(),
                 },
                 success: function(result) {
-                    //Loop through results
-                    for(var row in result) {
-                        //Divide users by paragraph
-                        $('#result').append('<p>');
-                        for(var item in result[row]) {
-                            //Append user items to paragraph
-                            $('#result').append(result[row][item] + '<br/>');
-                        }
-                        //close paragraph
-                        $('#result').append('</p>');
-                    }
+                    //display generated password in result div
+                    $('#result').text(result);
                 },
                 error: function (jqXHR) {
                     //Display any errors.
                    var response = JSON.parse(jqXHR.responseText);
-                   console.log(response.number);
-                   $('.errors').text(response.number);
+                   //loop through error messages
+                   for(var msg in response) {
+                       $('.errors').append(response[msg]);
+                   }
                 }
             });
         });

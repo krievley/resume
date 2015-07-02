@@ -17,6 +17,7 @@ $(document).ready(function () {
     $('input[name=separation]').click(function () {
         if ($('input[value="camelCase"]').is(":checked")) {
             $('input[name=letter]').attr('disabled', true);
+            $('input[value="capital"]').attr('checked', true);
         }
         else {
             $('input[name=letter]').attr('disabled', false);
