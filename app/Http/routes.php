@@ -36,3 +36,6 @@ Route::post('/contact', function () {
 
 //Route to controller which handles the developer toolbox website items.
 Route::controller('toolbox', 'ToolboxController');
+
+//Route to controller which handles the Acme website items.
+Route::controller('acme', 'AcmeController');

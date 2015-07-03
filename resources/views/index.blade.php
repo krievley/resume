@@ -76,7 +76,7 @@
     </div></a>
   </div>
   <div class="section grey">
-    <a href="home.html"><div class="w-container">
+    <a href="/acme"><div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6 center">
           <img class="snapshot" src="images/acmeSnapshot.JPG" width="557" alt="5376b95988d157927066d035_acmeSnapshot.JPG">
