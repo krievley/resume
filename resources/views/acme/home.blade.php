@@ -328,7 +328,7 @@
   </div>
   <div class="section footsec">
     <div class="w-container footer">
-      <div><a class="footer-link" href="/acme">Home</a><a class="footer-link" href="/acme/quote">Request a Quote</a><a class="footer-link" href="index.html">Resume Home Page</a>
+      <div><a class="footer-link" href="/acme">Home</a><a class="footer-link" href="/acme/quote">Request a Quote</a><a class="footer-link" href="/">Resume Home Page</a>
       </div>
       <p class="footer-text"><strong>Office Address:</strong>&nbsp;Medlock Bridge Rd Johns Creek, GA 30097
         <br><strong>Phone:</strong>&nbsp;678-555-1900&nbsp;<strong>Fax:</strong>&nbsp;678-555-1904

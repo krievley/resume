@@ -308,11 +308,11 @@ input, select{
   padding-top: 39px;
   padding-bottom: 39px;
   background-color: lightgrey;
-  background-image: url('../images/acme/example-bg.png');
+  background-image: url('/images/acme/example-bg.png');
   background-attachment: fixed;
 }
 .content-bg.two {
-  background-image: url('../images/acme/example-bg.png');
+  background-image: url('/images/acme/example-bg.png');
 }
 .example-image {
   width: 100%;
@@ -326,57 +326,57 @@ input, select{
 }
 .colmain {
   height: 500px;
-  background-image: url('../images/acme/HouseStockPhto.jpg');
+  background-image: url('/images/acme/HouseStockPhto.jpg');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 .colmain.home {
   background-color: transparent;
-  background-image: url('../images/acme/house.png');
+  background-image: url('/images/acme/house.png');
 }
 .colmain.car {
-  background-image: url('../images/acme/CarStockImg.jpg');
+  background-image: url('/images/acme/CarStockImg.jpg');
 }
 .colmain.moto {
-  background-image: url('../images/acme/MotorcycleStockImg.jpg');
+  background-image: url('/images/acme/MotorcycleStockImg.jpg');
 }
 .colmain.boat {
-  background-image: url('../images/acme/BoatSockImg.jpg');
+  background-image: url('/images/acme/BoatSockImg.jpg');
 }
 .colleft {
   height: 500px;
-  background-image: url('../images/acme/BoatSockImg.jpg');
+  background-image: url('/images/acme/BoatSockImg.jpg');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.5;
 }
 .colleft.house {
-  background-image: url('../images/acme/house.png');
+  background-image: url('/images/acme/house.png');
 }
 .colleft.car {
-  background-image: url('../images/acme/CarStockImg.jpg');
+  background-image: url('/images/acme/CarStockImg.jpg');
 }
 .colleft.moto {
-  background-image: url('../images/acme/MotorcycleStockImg.jpg');
+  background-image: url('/images/acme/MotorcycleStockImg.jpg');
 }
 .colright {
   height: 500px;
-  background-image: url('../images/acme/CarStockImg.jpg');
+  background-image: url('/images/acme/CarStockImg.jpg');
   background-position: 50% 50%;
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.5;
 }
 .colright.moto {
-  background-image: url('../images/acme/MotorcycleStockImg.jpg');
+  background-image: url('/images/acme/MotorcycleStockImg.jpg');
 }
 .colright.boat {
-  background-image: url('../images/acme/BoatSockImg.jpg');
+  background-image: url('/images/acme/BoatSockImg.jpg');
 }
 .colright.house {
-  background-image: url('../images/acme/house.png');
+  background-image: url('/images/acme/house.png');
 }
 .slidenav {
   margin-top: -20px;
