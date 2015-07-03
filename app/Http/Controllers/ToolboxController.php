@@ -215,12 +215,12 @@ class ToolboxController extends Controller {
             }
 
             return $wordString;
-    }
-    //If input is not validated.
-    // get the error messages from the validator
-    else {
-        $errors = $validator->messages();
-        return response($errors = $errors, $status = '400');
-    }
+        }
+        //If input is not validated.
+        // get the error messages from the validator
+        else {
+            $errors = $validator->messages();
+            return response($errors = $errors, $status = '400');
+        }
     }
 }

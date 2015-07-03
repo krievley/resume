@@ -7,9 +7,9 @@
   <title>Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/rievleyresume.webflow.css">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/normalize.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/webflow.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/rievleyresume.webflow.css') }}">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script>
     WebFont.load({
@@ -18,16 +18,16 @@
       }
     });
   </script>
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
-  <link rel="apple-touch-icon" type="image/x-icon" href="images/favicon.ico" />
+  <script type="text/javascript" src="{{ asset('js/modernizr.js') }}"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}"/>
+  <link rel="apple-touch-icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}" />
 </head>
 <body>
   <header class="navbar">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-4">
-          <img class="logo" src="images/logo-header.png" width="25" alt="530e4fc7f4a216ca3c0000e1_logo-header.png">
+          <img class="logo" src="{{ asset('images/logo-header.png') }}" width="25" alt="530e4fc7f4a216ca3c0000e1_logo-header.png">
           <div class="app-name">Kristin Rievley</div>
         </div>
         <div class="w-col w-col-8 nav-column"><a class="nav-link" href="/">Home</a><a class="nav-link" href="/resume">Resume</a>
@@ -39,7 +39,7 @@
       <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-6">
-          <img class="hero-iphone resume" src="images/rachel2.jpg" alt="536d2190ae6e16d8360b399d_rachel2.jpg">
+          <img class="hero-iphone resume" src="{{ asset('images/rachel2.jpg') }}" alt="536d2190ae6e16d8360b399d_rachel2.jpg">
         </div>
         <div class="w-col w-col-6 call-to-action">
           <h1 class="hero-header resume">Resume</h1>
@@ -111,7 +111,9 @@ Applied Science in Information Technology – December 2013</h3>
         <div class="w-col w-col-7">
           <h2 class="price-text">Download my resume in multiple formats.</h2>
         </div>
-        <div class="w-col w-col-5"><a class="button" href="files/rievleyresume.docx">Download in Word</a><a class="button" href="files/rievleyresume.pdf">Download in PDF</a>
+        <div class="w-col w-col-5">
+            <a class="button" href="{{ asset('files/rievleyresume.docx') }}">Download in Word</a>
+            <a class="button" href="{{ asset('files/rievleyresume.pdf') }}">Download in PDF</a>
         </div>
       </div>
     </div>
@@ -120,20 +122,20 @@ Applied Science in Information Technology – December 2013</h3>
     <div class="w-container">
       <div class="button-block">
         <a class="w-inline-block social-button" href="mailto:kristin@rievley.com?subject=Hello!" target="_blank">
-          <img src="images/email-icon.png" width="21px" alt="52af8da2aed63fb91400000f_email-icon.png">
+          <img src="{{ asset('images/email-icon.png') }}" width="21px" alt="52af8da2aed63fb91400000f_email-icon.png">
         </a>
         <a class="w-inline-block social-button" href="https://www.facebook.com/kristin.rievley" target="_blank">
-          <img src="images/facebook-icon.png" width="21px" alt="52af8da8aed63fb914000010_facebook-icon.png">
+          <img src="{{ asset('images/facebook-icon.png') }}" width="21px" alt="52af8da8aed63fb914000010_facebook-icon.png">
         </a>
         <a class="w-inline-block social-button" href="https://twitter.com/littlerievley" target="_blank">
-          <img src="images/twitter-icon.png" width="21px" alt="52af8db1aed63fb914000011_twitter-icon.png">
+          <img src="{{ asset('images/twitter-icon.png') }}" width="21px" alt="52af8db1aed63fb914000011_twitter-icon.png">
         </a>
       </div>
-      <img class="logo-in-footer" src="images/footer-logo.png" width="25px" alt="52af8db8aed63fb914000012_footer-logo.png">
+      <img class="logo-in-footer" src="{{ asset('images/footer-logo.png') }}" width="25px" alt="52af8db8aed63fb914000012_footer-logo.png">
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/webflow.js"></script>
+  <script type="text/javascript" src="{{ asset('js/webflow.js') }}"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>
