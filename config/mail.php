@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'server166.web-hosting.com'),
+    'host' => env('MAIL_HOST', 'mail.kristin-rievley.me'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 465),
+    'port' => env('MAIL_PORT', 26),
 
     /*
     |--------------------------------------------------------------------------
