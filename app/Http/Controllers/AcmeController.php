@@ -155,7 +155,7 @@ class AcmeController extends Controller {
         Mail::send('emails.quote', ['message' => $message], function($mail)
         {
             $mail->to('admin@kristin-rievley.me', 'Administrator')->subject("AIB Quote Request");
-            $mail->from("AIB Website");
+            $mail->from('NoReply@kristin-rievley.me', "AIB Website");
         });
         //Send flash message to session.
         Session::flash('message', 'Your quote request has been submitted');
