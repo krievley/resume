@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Validator, Input, Redirect, Session; 
+use Validator, Input, Redirect, Session, Mail; 
 
 class AcmeController extends Controller {
     
