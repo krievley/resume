@@ -152,7 +152,7 @@ class AcmeController extends Controller {
 		}
 	}	
         //Send email including all details from above.
-        Mail::send('emails.quote', ['message' => $message], function($mail)
+        Mail::send('emails.quote', $message, function($mail)
         {
             $mail->to('admin@kristin-rievley.me', 'Administrator')->subject("AIB Quote Request");
         });

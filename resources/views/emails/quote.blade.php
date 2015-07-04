@@ -6,9 +6,7 @@
     <body>
         <div class="container">
             <div class="content">
-                @foreach($message as $msg)
-                    <p>{!! $msg !!}</p>
-                @endforeach
+                <p>{!! $message !!}</p>
             </div>
         </div>
     </body>
