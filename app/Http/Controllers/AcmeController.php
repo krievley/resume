@@ -24,11 +24,8 @@ class AcmeController extends Controller {
     
     //Function to process quote form.
     public function postQuote() {
-        //Email details.
-        $to = "kristin@rievley.com";
-	$subject = "AIB Quote Request";
+        //Message details.
 	$message = "Quote request from AIB Website\n\n";
-	$from = "AIB Website";
         $formData = Input::all();
 	
 	$message .= "Owner Information\n";
@@ -155,7 +152,11 @@ class AcmeController extends Controller {
 		}
 	}	
         //Send email including all details from above.
-	mail($to, $subject, $message, "From: $from\n");
+        Mail::send('emails.contact', ['message' => $message], function($mail)
+        {
+            $mail->to('admin@kristin-rievley.me', 'Administrator')->subject("AIB Quote Request");
+            $mail->from("AIB Website");
+        });
         //Send flash message to session.
         Session::flash('message', 'Your quote request has been submitted');
 	//Reload quote page.
