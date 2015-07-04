@@ -6,7 +6,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <p>{!! $message !!}</p>
+                <p>{!! $messageArray['message'] !!}</p>
             </div>
         </div>
     </body>
