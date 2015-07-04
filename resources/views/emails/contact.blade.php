@@ -7,9 +7,9 @@
         <div class="container">
             <div class="content">
                 <h3>Contact Request From Resume Website</h3>
-                <ul>
-                    <li>Name: {!! $contact['name'] !!}</li>
-                </ul>
+                <p>Name: {!! $contact['name'] !!}</p><br/>
+                <p>Email: {!! $contact['email'] !!}</p><br/><br/>
+                <p>Message: {!! $contact['message'] !!}</p>
             </div>
         </div>
     </body>
