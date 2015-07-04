@@ -154,7 +154,7 @@ class AcmeController extends Controller {
         //Set array to hold message string.
         $messageArray = array('message', $message);
         //Send email including all details from above.
-        Mail::send('emails.quote', $messageArray, function($mail)
+        Mail::send('emails.quote', ['messageArray' => $messageArray], function($mail)
         {
             $mail->to('admin@kristin-rievley.me', 'Administrator')->subject("AIB Quote Request");
         });
