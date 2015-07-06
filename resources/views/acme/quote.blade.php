@@ -20,8 +20,25 @@
   <script type="text/javascript" src="{{ asset('js/acme/modernizr.js') }}"></script>
   <link rel="shortcut icon" type="image/x-icon" href="https://daks2k3a4ib2z.cloudfront.net/5370e7084c1b3c3d056e7c37/5374f6f934abe5ed693c0cd6_favicon.jpg">
   <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/5370e7084c1b3c3d056e7c37/5374f6f934abe5ed693c0cd6_favicon.jpg">
+  <style>
+      .display{display: {!! $display !!};}
+  </style>
+  <script>
+    $('.myDiv').click(function(e) { //button click class name is myDiv
+        $('#message').hide(); //hide the button
+    });
+
+    $(function(){
+        $(document).click(function(){  
+            $('#message').hide(); //hide the button
+        });
+    });
+  </script>
 </head>
 <body>
+    <div id="message" class="submit-progress display">
+        <label>{!! $message !!}</label>
+    </div>
     <form id="email-form" name="email-form" data-name="Email Form" action="/acme/quote" method="post">
         {!! Form::token() !!}
   <div class="section header">
@@ -36,11 +53,6 @@
     </div>
   </div>
   <div class="section head">
-      <div class='w-container'>
-          @if(Session::has('message'))
-            <div class='session_message'>{{ Session::get('message') }}</div>
-          @endif  
-      </div>
     <div class="w-container">
       <h2>Quote Request Form</h2>
       <p class="quotehead">We work hard at finding the best solutions for your specific needs. We start by gathering information on you and your current insurance. After that, just place a check next to each type of insurance you are looking for and fill out the form.&nbsp;</p>
@@ -496,12 +508,6 @@
           <div class="buttonwrap"><button type="submit" class="button">Submit Quote Request</button>
           </div>
         </div>
-      <div class="w-form-done">
-        <p>Thank you! Your submission has been received!</p>
-      </div>
-      <div class="w-form-fail">
-        <p>Oops! Something went wrong while submitting the form :(</p>
-      </div>
     </div>
   </div>
   <div class="section footsec">
@@ -510,7 +516,7 @@
       </div>
       <p class="footer-text"><strong>Office Address:</strong>&nbsp;Medlock Bridge Rd Johns Creek, GA 30097
         <br><strong>Phone:</strong>&nbsp;678-555-1900&nbsp;<strong>Fax:</strong>&nbsp;678-555-1904
-        <br><strong>Email:</strong>&nbsp;kristin@rievley.com</p>
+        <br><strong>Email:</strong>&nbsp;admin@kristin-rievley.me</p>
       <div>
         <a href="https://www.facebook.com/kristin.rievley" target="_blank"><img src="{{ asset('images/acme/facebook.png') }}" width="50" alt="5374c99434abe5ed693c097f_facebook.png"></a>
         <a href="https://twitter.com/LittleRievley" target="_blank"><img src="{{ asset('images/acme/twitter.png') }}" width="50" alt="5374ca603dec09982c22c645_twitter.png"></a>
@@ -521,7 +527,6 @@
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="{{ asset('js/acme/webflow.js') }}"></script>
-  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </form>
 </body>
 </html>

@@ -19,7 +19,7 @@ class AcmeController extends Controller {
     //Quote page function.
     public function getQuote() {
         //Display the quote page.
-        return view('acme.quote');
+        return view('acme.quote')->with('display', 'none')->with('message', null);
     }
     
     //Function to process quote form.
@@ -158,9 +158,7 @@ class AcmeController extends Controller {
         {
             $mail->to('admin@kristin-rievley.me', 'Administrator')->subject("AIB Quote Request");
         });
-        //Send flash message to session.
-        Session::flash('message', 'Your quote request has been submitted');
-	//Reload quote page.
-        return Redirect::to('/acme/quote');
+        //Display the quote page with new message and display.
+        return view('acme.quote')->with('display', 'inline')->with('message', "Your quote has been submitted.");
     }
 }
